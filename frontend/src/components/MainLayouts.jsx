@@ -13,7 +13,7 @@ const MainLayouts = () => {
   useEffect(() => {
     const fetchBlogData = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/blog");
+        const response = await axios.get("https://blog-platform-beryl.vercel.app/blog");
         setBlogData(response.data);
         console.log("fetch done", response.data);
       } catch (error) {

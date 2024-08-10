@@ -23,7 +23,7 @@ export const PostPage = () => {
     e.preventDefault();
     try {
       console.log("submiting Blog Data",blogData);
-      const response = await axios.post("http://localhost:3001/create",{
+      const response = await axios.post("https://blog-platform-beryl.vercel.app/create",{
         title:blogData.title,
         image:blogData.image,
         description:blogData.description,
